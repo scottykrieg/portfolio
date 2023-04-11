@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /firebase/firebaseConfig.js
+Disallow: /api/           # block API endpoints
+Disallow: /admin/         # block admin panel
+Disallow: /wp-admin/      # block WordPress admin panel
+Disallow: /wp-login.php   # block WordPress login page
