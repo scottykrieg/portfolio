@@ -10,6 +10,7 @@ import {
   MdSchool,
   MdOutlineDesktopMac,
 } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const mainFont = Noto_Sans_Mono({
   weight: "500",
@@ -35,70 +36,100 @@ export default function Header() {
   return (
     <>
       <div className={styles.headerContainer}>
-        <Link href="/">
-          <Avatar className={styles.avatar}>SK</Avatar>
-        </Link>
-        <Button
-          onClick={() => scrollToElement("#about")}
-          sx={{
-            bgcolor: "#10347A !important",
-            color: "#ffffff !important",
-            margin: "10px",
-            "& svg": {
-              fontSize: "1.5rem",
-              padding: "0 0.5rem",
-            },
-          }}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          {/* CHANGE URL BEFORE DEPLOY */}
-          <span>About</span> <MdPerson />
-        </Button>
-        <Button
-          onClick={() => scrollToElement("#contact")}
-          sx={{
-            bgcolor: "#10347A !important",
-            color: "#ffffff !important",
-            margin: "10px",
-            "& svg": {
-              fontSize: "1.5rem",
-              padding: "0 0.5rem",
-            },
-          }}
-        >
-          {/* CHANGE URL BEFORE DEPLOY */}
-          <span>Contact</span> <MdMailOutline />
-        </Button>
+          <Link href="/">
+            <Avatar className={styles.avatar}>SK</Avatar>
+          </Link>{" "}
+        </motion.div>
 
-        <Button
-          sx={{
-            bgcolor: "#10347A !important",
-            color: "#ffffff !important",
-            margin: "10px",
-            "& svg": {
-              fontSize: "1rem",
-              padding: "0 0.5rem",
-            },
-          }}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <Link href="/Projects">
-            <span>Projects</span> <MdOutlineDesktopMac />
-          </Link>
-        </Button>
-        <Button
-          sx={{
-            bgcolor: "#10347A !important",
-            color: "#ffffff !important",
-            margin: "10px",
-            "& svg": {
-              fontSize: "1rem",
-              padding: "0 0.5rem",
-            },
-          }}
+          <Button
+            onClick={() => scrollToElement("#about")}
+            sx={{
+              bgcolor: "#000000 !important",
+              color: "#ffffff !important",
+              margin: "10px",
+              "& svg": {
+                fontSize: "1.5rem",
+                padding: "0 0.5rem",
+              },
+            }}
+          >
+            {/* CHANGE URL BEFORE DEPLOY */}
+            <span>About</span> <MdPerson />
+          </Button>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <Link href="/Resume">
-            <span>Resume</span> <MdSchool />
-          </Link>
-        </Button>
+          <Button
+            onClick={() => scrollToElement("#contact")}
+            sx={{
+              bgcolor: "#000000 !important",
+              color: "#ffffff !important",
+              margin: "10px",
+              "& svg": {
+                fontSize: "1.5rem",
+                padding: "0 0.5rem",
+              },
+            }}
+          >
+            {/* CHANGE URL BEFORE DEPLOY */}
+            <span>Contact</span> <MdMailOutline />
+          </Button>{" "}
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
+          <Button
+            sx={{
+              bgcolor: "#000000 !important",
+              color: "#ffffff !important",
+              margin: "10px",
+              "& svg": {
+                fontSize: "1rem",
+                padding: "0 0.5rem",
+              },
+            }}
+          >
+            <Link href="/Projects">
+              <span>Projects</span> <MdOutlineDesktopMac />
+            </Link>
+          </Button>{" "}
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
+          <Button
+            sx={{
+              bgcolor: "#000000 !important",
+              color: "#ffffff !important",
+              margin: "10px",
+              "& svg": {
+                fontSize: "1rem",
+                padding: "0 0.5rem",
+              },
+            }}
+          >
+            <Link href="/Resume">
+              <span>Resume</span> <MdSchool />
+            </Link>
+          </Button>{" "}
+        </motion.div>
       </div>
     </>
   );
