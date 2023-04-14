@@ -39,3 +39,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .firebase/portfolio-site-11982/functions/node_modules/unpipe/package.json
+firebase-debug.log

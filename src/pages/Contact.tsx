@@ -87,7 +87,9 @@ export default function Contact() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <p
-              style={{ cursor: "pointer" }}
+              style={{
+                cursor: "pointer",
+              }}
               onMouseEnter={() => {
                 /* Handle hover in */
               }}

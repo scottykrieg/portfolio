@@ -21,9 +21,9 @@ export default function Projects() {
       {" "}
       <div className={mainFont.className}>
         <div className={styles.projectsPage}>
+          {" "}
           <h1>Projects</h1>
           <br />
-
           <Link href="https://one-rep-max-b404d.web.app/">
             <h2>One Rep Max Calculator</h2>
           </Link>
@@ -37,7 +37,6 @@ export default function Projects() {
             <SiGithub />
             GitHub Repository
           </Link>
-
           <h3>Built using:</h3>
           <ul>
             <li>
@@ -60,7 +59,7 @@ export default function Projects() {
               <SiFirebase />
               Firebase
             </li>
-          </ul>
+          </ul>{" "}
         </div>{" "}
       </div>
     </>

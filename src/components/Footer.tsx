@@ -1,4 +1,7 @@
 import styles from "@/styles/Footer.module.sass";
+// import MoonSurface from "@/components/images/MoonSurface.svg";
+
+// Use the MoonSurface variable to reference the SVG file
 import {
   SiReact,
   SiFirebase,
@@ -16,6 +19,7 @@ const mainFont = Noto_Sans_Mono({
 export default function Footer() {
   return (
     <>
+      {" "}
       <div className={mainFont.className}>
         <div className={styles.footerContainer}>
           <h6 className={styles.footerContainer}>

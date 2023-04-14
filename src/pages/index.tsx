@@ -6,7 +6,6 @@ import { Noto_Sans_Mono } from "next/font/google";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import stars from "@/components/images/Frame.svg";
 import Image from "next/image";
-import zIndex from "@mui/material/styles/zIndex";
 
 const mainFont = Noto_Sans_Mono({
   weight: "500",
@@ -22,13 +21,14 @@ export default function Index() {
         <div style={{ height: "100vh" }}>
           {" "}
           <div className={mainFont.className}>
-            <Parallax pages={4} style={{ height: "100vh" }}>
+            <Parallax pages={3} style={{ height: "100vh" }}>
               <ParallaxLayer
                 sticky={{ start: 0, end: 2 }}
                 style={{
                   display: "grid",
                   placeContent: "center",
                   backgroundSize: "cover",
+                  zIndex: "-1",
                 }}
               >
                 <Image src={stars} alt="stars" />

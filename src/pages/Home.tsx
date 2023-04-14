@@ -15,13 +15,11 @@ export default function Home() {
       <div className={mainFont.className}>
         <div className={styles.welcomeText}>
           <motion.div whileHover={{ scale: 1.05 }}>
-            <h6>Hi, I am </h6>
+            <h5>Hi, I am </h5>
           </motion.div>
-          <br />{" "}
           <motion.div whileHover={{ scale: 1.05 }}>
             <h1>Scotty Krieg</h1>{" "}
           </motion.div>
-          <br />{" "}
           <motion.div whileHover={{ scale: 1.05 }}>
             <h4>A software developer.</h4>
           </motion.div>

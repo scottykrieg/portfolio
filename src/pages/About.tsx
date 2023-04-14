@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "@/styles/About.module.sass";
-import ScrollLink from "@/components/ScrollLink";
 import { GiPeach, GiPeanut } from "react-icons/gi";
 import { FaFlagUsa } from "react-icons/fa";
 import { Noto_Sans_Mono } from "next/font/google";
@@ -15,6 +14,7 @@ export default function About() {
   return (
     <div className={mainFont.className}>
       <div id="about" className={styles.aboutText}>
+        {" "}
         <h2>
           <motion.div whileHover={{ scale: 1.05 }}>
             {" "}
@@ -36,18 +36,6 @@ export default function About() {
         </motion.div>
         <br />
         <div>
-          <motion.div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <ScrollLink href="/#contact">
-              <h2>Send me a message.</h2>
-            </ScrollLink>
-          </motion.div>
-        </div>
-        <br />
-        <div>
           {" "}
           <motion.div
             whileHover={{ scale: 1.2 }}
@@ -58,7 +46,7 @@ export default function About() {
               <h2>Check out some of my work here.</h2>
             </Link>{" "}
           </motion.div>
-        </div>
+        </div>{" "}
       </div>
     </div>
   );
