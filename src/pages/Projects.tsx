@@ -9,6 +9,7 @@ import {
 } from "react-icons/si";
 import styles from "@/styles/Projects.module.sass";
 import { Noto_Sans_Mono } from "next/font/google";
+import ThreeScene from "@/Components/ThreeScene";
 
 const mainFont = Noto_Sans_Mono({
   weight: "500",
@@ -19,6 +20,7 @@ export default function Projects() {
   return (
     <>
       {" "}
+      <ThreeScene />
       <div className={mainFont.className}>
         <div className={styles.projectsPage}>
           {" "}

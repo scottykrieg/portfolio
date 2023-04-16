@@ -20,8 +20,8 @@ export default function Footer() {
   return (
     <>
       {" "}
-      <div className={mainFont.className}>
-        <div className={styles.footerContainer}>
+      <div className={styles.footerContainer}>
+        <div className={mainFont.className}>
           <h6 className={styles.footerContainer}>
             Created by Scotty Krieg, using:
           </h6>

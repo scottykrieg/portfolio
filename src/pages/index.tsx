@@ -2,10 +2,9 @@ import Head from "next/head";
 import About from "./About";
 import ContactForm from "./Contact";
 import Home from "./Home";
+import ThreeScene from "@/Components/ThreeScene";
+
 import { Noto_Sans_Mono } from "next/font/google";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import stars from "@/components/images/stars.svg";
-import Image from "next/image";
 
 const mainFont = Noto_Sans_Mono({
   weight: "500",
@@ -18,27 +17,14 @@ export default function Index() {
         <title>Scott Krieg</title>
       </Head>{" "}
       <main>
-        <div style={{ height: "100vh" }}>
-          {" "}
+        {" "}
+        <div>
           <div className={mainFont.className}>
-            <Parallax pages={3} style={{ height: "100vh" }}>
-              <ParallaxLayer
-                sticky={{ start: 0, end: 2 }}
-                style={{
-                  display: "grid",
-                  placeContent: "center",
-                  backgroundSize: "cover",
-                  zIndex: "-1",
-                }}
-              >
-                <Image src={stars} alt="stars" />
-              </ParallaxLayer>
-              <Home />
-              <About />
-              <ContactForm />
-            </Parallax>
+            <ThreeScene /> <Home />
+            <About />
+            <ContactForm />
           </div>{" "}
-        </div>
+        </div>{" "}
       </main>
     </>
   );
