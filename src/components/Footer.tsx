@@ -22,9 +22,9 @@ export default function Footer() {
       {" "}
       <div className={styles.footerContainer}>
         <div className={mainFont.className}>
-          <h6 className={styles.footerContainer}>
+          <h3 className={styles.footerContainer}>
             Created by Scotty Krieg, using:
-          </h6>
+          </h3>
           <div className={styles.iconRow}>
             <SiMui />
             <SiTypescript />

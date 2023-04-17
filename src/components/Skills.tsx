@@ -48,8 +48,8 @@ function Skills(): JSX.Element {
     <>
       <div className={styles.skillsStyle}></div>
       <BsCodeSlash size={70} />
-      <br></br>
-      <h1 className={styles.skillsTitle} id="index">
+
+      <h1 style={{ padding: "30px" }} id="index">
         Skills
       </h1>
       <div className={styles.iconRow}>

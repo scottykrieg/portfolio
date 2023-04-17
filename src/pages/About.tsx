@@ -34,7 +34,6 @@ export default function About() {
         <motion.div whileHover={{ scale: 1.05 }}>
           <h3> I am available for hire today! </h3>
         </motion.div>
-        <br />
         <div>
           {" "}
           <motion.div
@@ -43,7 +42,9 @@ export default function About() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <Link href="/Projects">
-              <h2>Check out some of my work here.</h2>
+              <h2 style={{ marginTop: "150px" }}>
+                Check out some of my work here.
+              </h2>
             </Link>{" "}
           </motion.div>
         </div>{" "}
