@@ -44,7 +44,7 @@ export default function ThreeScene() {
 
     function addStar() {
       const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-      const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+      const material = new THREE.MeshToonMaterial({ color: 0xffffff });
       const star = new THREE.Mesh(geometry, material);
       const [x, y, z] = Array(3)
         .fill(1)
@@ -71,9 +71,9 @@ export default function ThreeScene() {
       torusKnot.rotation.y += 0.01;
       torusKnot.position.y += 0.003;
 
-      camera.position.z = t * -0.015;
-      camera.position.x = t * -0.0002;
-      camera.position.y = t * -0.0002;
+      camera.position.z -= 0.015;
+      camera.position.x -= 0.0002;
+      camera.position.y -= 0.0002;
     }
 
     document.body.onscroll = moveCamera;

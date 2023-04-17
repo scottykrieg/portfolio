@@ -28,7 +28,7 @@ export default function About() {
           <motion.div whileHover={{ scale: 1.05 }}>
             Atlanta, Georgia specifically.
           </motion.div>
-          <GiPeach /> <GiPeanut />
+          <GiPeach size={30} /> <GiPeanut size={30} />
         </span>
         <br />{" "}
         <motion.div whileHover={{ scale: 1.05 }}>
