@@ -7,7 +7,11 @@ export default function ThreeScene() {
 
   useEffect(() => {
     // Get the canvas element from the ref
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current!;
+
+    // Set canvas width and height to window width and height
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
     // Create the scene, camera, and renderer
     const scene = new THREE.Scene();
