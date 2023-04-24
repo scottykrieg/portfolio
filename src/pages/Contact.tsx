@@ -71,7 +71,7 @@ export default function Contact() {
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              <Link href="github.com/scottykrieg">
+              <Link href="https://www.github.com/scottykrieg">
                 {" "}
                 <SiGithub size={25} />
               </Link>{" "}
