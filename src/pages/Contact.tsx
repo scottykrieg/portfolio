@@ -55,7 +55,17 @@ export default function Contact() {
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <Button className={styles.sendButton} type="submit">
+                <Button
+                  variant="contained"
+                  sx={{
+                    color: "black",
+                    backgroundColor: "slategrey",
+                    borderColor: "gray",
+                    margin: "15px",
+                    ":hover": { backgroundColor: "silver" },
+                  }}
+                  type="submit"
+                >
                   Send
                 </Button>
               </motion.div>
