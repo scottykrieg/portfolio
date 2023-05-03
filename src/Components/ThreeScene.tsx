@@ -43,7 +43,7 @@ export default function ThreeScene() {
     //Add Star
 
     function addStar() {
-      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const geometry = new THREE.SphereGeometry(0.05, 24, 24);
       const material = new THREE.MeshToonMaterial({ color: 0xffffff });
       const star = new THREE.Mesh(geometry, material);
       const [x, y, z] = Array(3)
@@ -78,8 +78,19 @@ export default function ThreeScene() {
 
     document.body.onscroll = moveCamera;
 
+    function onWindowResize() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(width, height);
+    }
+
+    window.addEventListener("resize", onWindowResize);
+
     // Clean up by removing the event listener and disposing of the renderer
     return () => {
+      window.removeEventListener("resize", onWindowResize);
       renderer.dispose();
     };
   }, []);

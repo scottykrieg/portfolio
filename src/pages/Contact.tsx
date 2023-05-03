@@ -71,10 +71,13 @@ export default function Contact() {
               </motion.div>
             </div>
           </form>
-          <p>
-            Built using <Link href="https://formsubmit.co/">FormSubmit.co</Link>
-          </p>
-          <p>You can also visit my other pages:</p>
+          <div className={styles.socialText}>
+            <h4>
+              Built using{" "}
+              <Link href="https://formsubmit.co/">FormSubmit.co</Link>
+            </h4>
+            <h3>You can also visit my other pages:</h3>
+          </div>
           <div className={styles.socialMedia}>
             <motion.div
               whileHover={{ scale: 1.2 }}
