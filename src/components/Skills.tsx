@@ -28,8 +28,6 @@ const skills = [
   <SiTypescript size={40} key="7" />,
   <SiReact size={40} key="2" />,
   <SiNextdotjs size={40} key="6" />,
-  <SiPython size={40} key="3" />,
-  <SiDjango size={40} key="4" />,
   <SiFirebase size={40} key="5" />,
   <SiGithub size={40} key="8" />,
 ];
