@@ -49,7 +49,7 @@ export default function Projects() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             {" "}
-            <Link href="https://github.com/scottykrieg/next-1rm-calculator">
+            <Link href="https://github.com/scottykrieg/one-rep-max-next">
               {" "}
               <SiGithub />
               GitHub Repository
