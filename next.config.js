@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async headers() {
+  async rewrites() {
     return [
       {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "viewport",
-            value: "width=device-width, initial-scale=1",
-          },
-        ],
+        source: "/resume",
+        destination: "/Resume",
+      },
+      {
+        source: "/projects",
+        destination: "/Projects",
       },
     ];
   },

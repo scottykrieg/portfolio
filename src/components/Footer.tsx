@@ -1,9 +1,6 @@
 import styles from "@/styles/Footer.module.sass";
 import Link from "next/link";
 import { motion } from "framer-motion";
-// import MoonSurface from "@/components/images/MoonSurface.svg";
-
-// Use the MoonSurface variable to reference the SVG file
 import {
   SiReact,
   SiFirebase,

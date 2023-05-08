@@ -59,8 +59,6 @@ export default function ThreeScene() {
     // Define an animation loop using requestAnimationFrame
     function animate() {
       requestAnimationFrame(animate);
-      // torusKnot.rotation.x += 0.01;
-      // torusKnot.rotation.y += 0.01;
       renderer.render(scene, camera);
     }
     animate();
@@ -88,7 +86,6 @@ export default function ThreeScene() {
 
     window.addEventListener("resize", onWindowResize);
 
-    // Clean up by removing the event listener and disposing of the renderer
     return () => {
       window.removeEventListener("resize", onWindowResize);
       renderer.dispose();

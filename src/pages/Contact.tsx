@@ -5,14 +5,13 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 
-// import scrollToTop from "@/components/ScrollToTop";
 const mainFont = Noto_Sans_Mono({
   weight: "500",
   subsets: ["latin"],
 });
 
 export default function Contact() {
-  const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
+  const isBrowser = () => typeof window !== "undefined";
 
   function scrollToTop() {
     if (!isBrowser()) return;

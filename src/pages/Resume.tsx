@@ -22,7 +22,6 @@ export default function Resume() {
 
           <p>
             To view a PDF of my full resume, please click{" "}
-            {/* FIX ERROR ON REFRESH */}
             <Link
               href="https://storage.googleapis.com/resume-download/Krieg_Scott_Jr%20Resume%20.pdf"
               rel="noopener noreferrer"

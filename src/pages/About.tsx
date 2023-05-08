@@ -17,9 +17,7 @@ export default function About() {
         {" "}
         <h2>
           <motion.div whileHover={{ scale: 1.05 }}>
-            {" "}
             I am based in the Southern United States
-            {/* FIX SPACING */}
           </motion.div>
           <FaFlagUsa />
         </h2>{" "}
