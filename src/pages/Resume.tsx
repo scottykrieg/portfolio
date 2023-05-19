@@ -1,10 +1,10 @@
 import Link from "next/link";
-import styles from "@/styles/Resume.module.sass";
-import Education from "@/Components/Education";
-import Skills from "@/Components/Skills";
-import History from "@/Components/History";
+import styles from "../styles/Resume.module.sass";
+import Education from "../Components/Education";
+import Skills from "../Components/Skills";
+import History from "../Components/History";
 import { Noto_Sans_Mono } from "next/font/google";
-import ThreeScene from "@/Components/ThreeScene";
+import ThreeScene from "../Components/ThreeScene";
 
 const mainFont = Noto_Sans_Mono({
   weight: "500",

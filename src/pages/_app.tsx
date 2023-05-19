@@ -1,6 +1,4 @@
 import "@/styles/globals.sass";
-// import background from "@/components/images/Frame.svg";
-// import Image from "next/image";
 import type { AppProps } from "next/app";
 import Layout from "@/Components/layout";
 import { motion, AnimatePresence } from "framer-motion";

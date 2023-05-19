@@ -9,9 +9,9 @@ import {
   SiSass,
   SiJavascript,
 } from "react-icons/si";
-import styles from "@/styles/Projects.module.sass";
+import styles from "../styles/Projects.module.sass";
 import { Noto_Sans_Mono } from "next/font/google";
-import ThreeScene from "@/Components/ThreeScene";
+import ThreeScene from "../Components/ThreeScene";
 import { motion } from "framer-motion";
 
 const mainFont = Noto_Sans_Mono({
