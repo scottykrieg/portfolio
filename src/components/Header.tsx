@@ -1,5 +1,4 @@
 import Link from "next/link";
-// import ScrollLink from "./ScrollLink";
 import { Avatar } from "@mui/material";
 import { Button } from "@mui/material";
 import { Noto_Sans_Mono } from "next/font/google";
@@ -36,15 +35,15 @@ export default function Header() {
   return (
     <>
       <div className={styles.headerContainer}>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
-          <Link href="/">
+        <Link href="/">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
             <Avatar className={styles.avatar}>SK</Avatar>
-          </Link>{" "}
-        </motion.div>
+          </motion.div>
+        </Link>
 
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -63,8 +62,9 @@ export default function Header() {
               },
             }}
           >
-            {/* CHANGE URL BEFORE DEPLOY */}
-            <span>About</span> <MdPerson />
+            <Link href="/#about">
+              <span>About</span> <MdPerson />
+            </Link>
           </Button>
         </motion.div>
         <motion.div
@@ -84,52 +84,53 @@ export default function Header() {
               },
             }}
           >
-            {/* CHANGE URL BEFORE DEPLOY */}
-            <span>Contact</span> <MdMailOutline />
+            <Link href="/#contact">
+              <span>Contact</span> <MdMailOutline />
+            </Link>
           </Button>{" "}
         </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
-          <Button
-            sx={{
-              bgcolor: "#000000 !important",
-              color: "#ffffff !important",
-              margin: "10px",
-              "& svg": {
-                fontSize: "1rem",
-                padding: "0 0.5rem",
-              },
-            }}
+        <Link href="/Projects">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <Link href="/Projects">
+            <Button
+              sx={{
+                bgcolor: "#000000 !important",
+                color: "#ffffff !important",
+                margin: "10px",
+                "& svg": {
+                  fontSize: "1rem",
+                  padding: "0 0.5rem",
+                },
+              }}
+            >
               <span>Projects</span> <MdOutlineDesktopMac />
-            </Link>
-          </Button>{" "}
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
-          <Button
-            sx={{
-              bgcolor: "#000000 !important",
-              color: "#ffffff !important",
-              margin: "10px",
-              "& svg": {
-                fontSize: "1rem",
-                padding: "0 0.5rem",
-              },
-            }}
+            </Button>{" "}
+          </motion.div>
+        </Link>
+        <Link href="/Resume">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <Link href="/Resume">
+            <Button
+              sx={{
+                bgcolor: "#000000 !important",
+                color: "#ffffff !important",
+                margin: "10px",
+                "& svg": {
+                  fontSize: "1rem",
+                  padding: "0 0.5rem",
+                },
+              }}
+            >
               <span>Resume</span> <MdSchool />
-            </Link>
-          </Button>{" "}
-        </motion.div>
+            </Button>{" "}
+          </motion.div>
+        </Link>
       </div>
     </>
   );

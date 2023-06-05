@@ -20,7 +20,8 @@ export default function History() {
         </li>
         <li>
           <MdForklift size={40} /> Equipment Operator, Recycling Management
-          Resources: September 2022-November 2022
+          Resources: September 2022-November 2022, October-December 2020,
+          September 2019-June 2020
         </li>
         <li>
           <MdPhoneInTalk size={40} /> Lead Generator, Resonance Music Group: May

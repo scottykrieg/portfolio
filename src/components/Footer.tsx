@@ -1,13 +1,13 @@
 import styles from "@/styles/Footer.module.sass";
-// import MoonSurface from "@/components/images/MoonSurface.svg";
-
-// Use the MoonSurface variable to reference the SVG file
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   SiReact,
   SiFirebase,
   SiNextdotjs,
   SiMui,
   SiTypescript,
+  SiGithub,
 } from "react-icons/si";
 import { Noto_Sans_Mono } from "next/font/google";
 
@@ -31,6 +31,19 @@ export default function Footer() {
             <SiReact />
             <SiNextdotjs />
             <SiFirebase />
+          </div>
+          <div className={styles.footerGithub}>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <Link href="https://github.com/scottykrieg/portfolio">
+                {" "}
+                <SiGithub />
+                GitHub Repository for this site.
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>

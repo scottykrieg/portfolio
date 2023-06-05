@@ -1,5 +1,4 @@
 import styles from "@/styles/Skills.module.sass";
-
 import {
   SiJavascript,
   SiReact,
@@ -28,15 +27,12 @@ const skills = [
   <SiTypescript size={40} key="7" />,
   <SiReact size={40} key="2" />,
   <SiNextdotjs size={40} key="6" />,
-  <SiPython size={40} key="3" />,
-  <SiDjango size={40} key="4" />,
   <SiFirebase size={40} key="5" />,
   <SiGithub size={40} key="8" />,
 ];
 
 const skillList = skills.map((skill, index) => (
   <motion.a whileHover={{ scale: 3 }} key={index}>
-    {/* // eslint-disable-next-line react/jsx-key */}
     <li className={styles.iconRow}>
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -55,7 +51,7 @@ function Skills(): JSX.Element {
       <div className={styles.skillsStyle}></div>
       <BsCodeSlash size={70} />
 
-      <h1 style={{ padding: "30px" }} id="index">
+      <h1 style={{ padding: "30px", fontSize: "50px" }} id="index">
         Skills
       </h1>
       <div className={styles.iconRow}>
