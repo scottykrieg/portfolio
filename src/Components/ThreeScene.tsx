@@ -27,12 +27,12 @@ export default function ThreeScene() {
     camera.position.setZ(30);
 
     // Create a torus and add it to the scene
-    const geometry = new THREE.TorusKnotGeometry(10, 3, 16, 100);
-    const material = new THREE.MeshStandardMaterial({
-      color: 0x555599,
-    });
-    const torusKnot = new THREE.Mesh(geometry, material);
-    scene.add(torusKnot);
+    // const geometry = new THREE.TorusKnotGeometry(10, 3, 16, 100);
+    // const material = new THREE.MeshStandardMaterial({
+    //   color: 0x555599,
+    // });
+    // const torusKnot = new THREE.Mesh(geometry, material);
+    // scene.add(torusKnot);
 
     // Set Lighting
     const pointLight = new THREE.PointLight(0xffffff);
@@ -44,7 +44,7 @@ export default function ThreeScene() {
 
     function addStar() {
       const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-      const material = new THREE.MeshToonMaterial({ color: 0xffffff });
+      const material = new THREE.MeshToonMaterial({ color: 0xd8cf61 });
       const star = new THREE.Mesh(geometry, material);
       const [x, y, z] = Array(3)
         .fill(1)
@@ -67,9 +67,9 @@ export default function ThreeScene() {
 
     function moveCamera() {
       const t = document.body.getBoundingClientRect().top;
-      torusKnot.rotation.x += 0.05;
-      torusKnot.rotation.y += 0.01;
-      torusKnot.position.y += 0.003;
+      // torusKnot.rotation.x += 0.05;
+      // torusKnot.rotation.y += 0.01;
+      // torusKnot.position.y += 0.003;
 
       camera.position.z -= 0.015;
       camera.position.x -= 0.0002;
